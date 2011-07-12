@@ -12,3 +12,5 @@ module JquidsInputs
     end
   end
 end
+
+Formtastic::SemanticFormBuilder.send(:include, JquidsInputs::Formtastic::Jquids)
