@@ -22,17 +22,25 @@ This gem assumes that you have both the formtastic and jquids gems installed.
 
 In config/environment.rb:
 
-    config.gem "formtastic"
-    config.gem "jquids"
-    config.gem "formtastic_jquids"
+```ruby
+config.gem "formtastic"
+config.gem "jquids"
+config.gem "formtastic_jquids"
+```
 
 ####Rails 3:
 
 In your Gemfile:
 
-    gem "formtastic"
-    gem "jquids"
-    gem "formtastic_jquids"
+```ruby
+gem "formtastic"
+gem "jquids"
+gem "formtastic_jquids"
+```
+
+**NOTE**:  Order in your gemfile **DOES** matter.  If you call if before either
+of the other two plugins, the server will not start (something that will be
+looked into for future releases).
 
 
 Usage
@@ -40,8 +48,10 @@ Usage
 
 Where ever there is a field that needs to have a jquids datepicker, just a `:as => :jquids`:
 
-    <% semantic_form_for @task do |form| %>
-      <% form.inputs do %>
-        <%= form.input :due_date, :as => :calendardateselect %>
-      <% end %>
-    <% end %>
+```erb
+<% semantic_form_for @task do |form| %>
+  <% form.inputs do %>
+    <%= form.input :due_date, :as => :calendardateselect %>
+  <% end %>
+<% end %>
+```
