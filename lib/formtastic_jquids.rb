@@ -1,5 +1,3 @@
-#require "formtastic_jquids/formtastic_jquids.rb"
-
 module JquidsInputs
   module Formtastic
     module Jquids

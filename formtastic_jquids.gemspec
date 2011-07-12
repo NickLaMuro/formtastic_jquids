@@ -1,5 +1,5 @@
 $:.push File.expand_path("../lib", __FILE__)
-require "formtastic_jquids/constants/version"
+require "version"
 
 Gem::Specification.new do |s|
   s.name = "formtastic_jquids"
