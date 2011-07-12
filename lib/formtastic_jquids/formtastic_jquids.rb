@@ -1,6 +1,6 @@
-module Jquids
+module JquidsInputs
   module Formtastic
-    module JquidsInput
+    module Jquids
 
       protected
 

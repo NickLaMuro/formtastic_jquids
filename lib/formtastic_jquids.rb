@@ -1,1 +1,16 @@
-require "formtastic_jquids/formtastic_jquids.rb"
+#require "formtastic_jquids/formtastic_jquids.rb"
+
+module JquidsInputs
+  module Formtastic
+    module Jquids
+
+      protected
+
+      def jquids_input(method, options = {})
+        self.label(method, options_for_label(options)) +
+          self.jquids(method, strip_formtastic_options(options))
+      end
+
+    end
+  end
+end
