@@ -1,1 +1,1 @@
-require "fortastic_jquids/formtastic_jquids.rb"
+require "formtastic_jquids/formtastic_jquids.rb"
